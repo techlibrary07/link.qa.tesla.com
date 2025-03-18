@@ -1,0 +1,323 @@
+<!doctype html>
+<head>
+    <title>Learn Coding</title>
+    <script src="javascript.js"></script>
+  <!-- This is Inline js--> 
+        <script> function Myfun(){                            
+        document.getElementById('fun').innerHTML="Hello World"; }
+        </script>
+</head>
+<body>
+    <p id="demo"></p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Click For Current Date</button><br><br>
+    <p id="xemo2"></p>
+    <button type='button' onclick='document.getElementById("xemo2").innerHTML="Have Are You Gopal !"'>Hello</button>
+ <h4>1. Javascript Html method is getElementById()</h4><br>
+ <h4>2. HTML Element with (id=xemo2) and changes the element content(innerHTML) to "Have Are You Gopal"</h4>
+ <img id="bulb" src="pic_bulboff.gif" style="width:50px"><br>
+ <button type="button" onclick="document.getElementById('bulb').src='pic_bulbon.gif'">Turn on The Light</button><br>
+ <button type="button" onclick="document.getElementById('bulb').src='pic_bulboff.gif'">Turn off the Light</button>
+ <h4>3. JS Can Change The Attribute Value</h4>
+ <h4>4. jS Change The Value Of src(source) attribute of an img tage </h4>
+ <p id="font">Hello I am Gopal Singh From Assam</p>
+ <button type="button" onclick="document.getElementById('font').style.fontSize='40px'">Font Size Large</button>
+
+<h4>5. JS can change html style (css)</h4>
+<p id="hide">Click For Hide</p>
+<button type="button" onclick="document.getElementById('hide').style.display='none'">Hide</button>
+<button type="button" onclick="document.getElementById('hide').style.display='block'">Show</button>
+
+<!-- Did You Know?
+JavaScript and Java are completely different languages, both in concept and design.
+JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+ECMA-262 is the official name of the standard. ECMAScript is the official name of the language. -->
+<p id="insert"></p>
+<script>document.getElementById('insert').innerHTML="JS IN Body"</script>
+<h4 id >in html javascript code is inserted between script tags</h4>
+
+<!-- Old Javascript examples may use a type attribute:
+<script type="text/javascript"> The type attribute is not required javascript is the default scripting language in html
+-->
+<h4>JS Functions and Events</h4>
+<h4> a JS Functions is Block of JS Code,That can be Executed When "Called For"
+ For Example a Function can be called when an event occur like when users click a button   
+</h4>
+<h4>JS In Head or body : you can place number of script in html document
+    script can be placed in the body or in the head section an html pages or in both
+
+</h4>
+<h4>JS in head : in this example a js function is placed in the head section of an html pages 
+    this function is invoked (called) when a button is clicked:
+</h4>
+    <h4 id="fun">Example : Show On Head Section</h4>
+    <button type="button" onclick="Myfun()">Click Fun Test</button>
+
+ <h4>Placing script at bottom of the body element improve the display speed because script interpretations slows down the display</h4>
+ <h4>JS Can Display data in differents way :</h4>
+<h4>1. Writing into an HTML element using : innerHTML </h4>
+<h4>2. Writing into the HTML output using : document.write</h4>
+<h4>3. Writing into the browser console using : console.log</h4>
+<h4>writing into an alert box using : window.alert()</h4>
+
+<h4> Using innerHTML</h4>
+<h3> to access an HTML element,JS can use the document.getElememtById(id) method
+the id attribute defines the HTML elements the innerHTML property defines the HTML contents
+Example :</h3>
+<h1 id="exam"></h1>
+<script>document.getElementById("exam").innerHTML = 54+6</script>
+<h4>for testing pupose it is Using document.write and usitng it after an HTML document is loaded will delete all existing HTML ,Example :</h4>
+<button type="button" onclick="document.write(2+2)">Click for calculate</button>
+<h4>Using window.alert for alert box </h4>
+<!--<script>window.alert(2+6)</script> -->
+<h4>Using console.log() for debbugging purpose you can call the browser to display data</h4>
+<wh4>JS print for print window content</wh4>
+<button type="button" onclick="window.print()">print</button>
+
+<h3>JS Proggram : <br>
+    1. a computer proggram is list of instrction to be excuted by a computer <br>
+    2. in a programming language these programming instration are called statement<br>
+    3. A javascript program is list of programing statements
+</h3>
+<h3> semicolons :</h3>
+<h3>semicolon separate JS statement
+    add a semicolon at the end of each Executed statement
+</h3>
+<h3>JS Code Blocks</h3>
+
+<h3>javascript statements can be grouped together in code blocks <br>
+the pupose of code block is to define statements to be executed togather <br>
+one palce is in JS function Exapmle:<br>
+
+
+</h3>
+<p id="blok"></p>
+<p id="blok1"></p>
+<button type="button" onclick="Mfun()">click me</button>
+
+<script>
+    function Mfun(){
+
+document.getElementById('blok').innerHTML= "Hello";
+document.getElementById('blok1').innerHTML= "Gopal";
+
+
+    }
+</script>
+<h3>Javascript Variable : <br>
+    1. in a programming language variable are used for store data values <br>
+    2. JS uses the Keywords var, let nad const to declare variable<br>
+    3.an equal sign is used to assign values to variable
+    
+</h3>
+<h3>The General rules for constructing names for variables : <br>
+    1. Names can contain letters,digits,underscore, and doller signs.
+    2. Names must begin with a letters
+    3. Names can also begin with $ and _(but we will not used it in this tutorial)
+    4.Names are case sensitive (y and Y are different variables)
+    5. reserved word (like js keywords) cannot be used as names)
+
+</h3>
+<p id="var"></p>
+<script>
+
+let x;
+x = 6;
+document.getElementById('var').innerHTML=x;
+</script>
+
+<h2>Js let</h2>
+<h3>1. variable defined with let cannot be redeclared
+    2. variables defined with let must be declared before used
+    3. variable defined with let have block scope example : Variables declared inside a { } block cannot be accessed from outside the block
+    4. Variables declared with the var keyword can NOT have block scope.
+    5. 
+
+</h3>
+    <h2>js const </h2>
+  <h3>
+    1. Variable defined with const cannot be redeclared<br>
+    2. variables defined with const cannot be reassigned <br>
+    3. varibales defined with const have block scope <br>
+  </h3> 
+    <h2>when to use js const</h2>
+    <h3>always declare a variables with const when you know that the value should not be changed <br>
+    # use const when you declare
+    * a new array
+    * a new object
+    * a new Functions
+    * a new regexp
+    </h3>
+
+ <h2>Js operaters</h2>
+ <h3>Types of JavaScript Operators
+    There are different types of JavaScript operators:
+    
+   * Arithmetic Operators
+   * Assignment Operators
+   * Comparison Operators
+   * Logical Operators
+   * Conditional Operators
+    </h3>   
+    <h3>Arithmetic operaters example: <br></h3>
+<script>
+
+ let $  = 12;
+ let _c = 32;
+ let A  = $ + _c
+ document.write(A);
+ 
+
+document.write("<h3>JS assingment operators</h3>")
+
+let sx = 32;
+ sx += 2; 
+ document.write(sx);
+
+ // =
+// +=
+// -=
+// *=
+// /=
+// %=
+//**=
+
+document.write("<h3>js comparison operators</h3>")
+
+let Q = 29;
+let W = 29;
+let Z = (Q==W);
+document.write(Z)
+
+
+// Operator	Description
+// ==	        equal to 
+// !=	        not equal
+// !==	        not equal value or not equal type
+// >	        greater than
+// <	        less than
+// >=	        greater than or equal to
+// <=	        less than or equal t 
+// ?	        ternary operator        
+
+document.write("<h3>js logical operators</h3>");
+let as = 32;
+let B = 43;
+let tt = (as > 10 && B > 23 );
+
+ document.write(tt);
+
+ // Operator	Description
+// &&	        logical and
+// ||	        logical or
+// !	        logica        
+
+document.write("<h3>Data type</h3>");
+let dg =21.43;
+let rf ="hello"
+
+document.write(typeof(dg)+"<br>"+typeof(rf));
+</script>
+<h3>js functions</h3>
+
+<h4>JavaScript Function Syntax
+    A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+    
+    Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
+    
+    The parentheses may include parameter names separated by commas:
+    (parameter1, parameter2, ...)
+    
+    The code to be executed, by the function, is placed inside curly brackets: {}<br>
+
+    Why Functions?
+    You can reuse code: Define the code once, and use it many times.
+    
+    You can use the same code many times with different arguments, to produce different results.
+<br>
+Local Variables
+Variables declared within a JavaScript function, become LOCAL to the function.
+
+Local variables can only be accessed from within the function.
+
+</h4>
+
+<script>
+function mydf(x,y){
+
+    return x+y;
+}
+document.write(mydf(22,3));
+
+
+</script>
+<h3>Js Object </h3><br>
+<script>
+
+const  age= {
+fname:"Gopal",
+lname:"Singh",
+abhay:"NILL",
+fulldetail: function(){
+    return this.fname + " " + this.lname
+}
+
+}
+
+document.write(age.fulldetail()); //access two ways
+document.write(age["fname"]);
+
+document.write(<h3>But strings can also be defined as objects with the keyword new: let d = new String("Hello") </h3>)
+</script>
+
+<h3>Js event <br></h3>
+<p id="ds"></p>
+<script>
+function dis(){
+
+    document.getElementById("ds").innerHTML= Date();
+
+}
+</script>
+<button type="button" onclick="dis()">show date</button>
+
+<h3>js String</h3>
+
+<script>
+
+let S="hello";
+let L =S.length
+document.write(L+"<br>")
+document.write
+
+let E ="My \\ name\ is \'Gopal\'";    //   \'
+                                      //   \"
+                                      //   \\ 
+// breaking codeline using \ example: innerHTML = "Hello \
+// Dolly!";
+
+//document.write(<h3>But strings can also be defined as objects with the keyword new: let d = new String("Hello") </h3>))
+
+document.write(E);
+
+document.write("<h3>Js String method</h3><br>");
+document.write("<h4>There are 3 methods for extracting a part of a string:</h4><br>");
+
+
+let SD = "Hello World";
+let J  = SD.slice(0,3);
+
+document.write(J);
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
